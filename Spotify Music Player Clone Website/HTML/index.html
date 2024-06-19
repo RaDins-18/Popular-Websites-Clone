@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/utility.css">
+    <link rel="shortcut icon" href="../Assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container flex bg-black">
+        
+        <div class="left-side">
+
+            <div class="main bg-gray m-1 rounded f-3 f-w">
+
+                <div class="semi-main flex justify-space-between align-center">
+                    <img class="invert c-p" style="width: 80px;" src="../Assets/spotify.svg" alt="spotify">
+                    <img class="close c-p" style="width: 15px;" src="../Assets/close.png" alt="close">
+                </div>
+
+                <ul class="flex column g-1">
+                    <li class="flex align-center g-2 c-p"><img class="invert" src="../Assets/home.svg" alt="home">Home</li>
+                    <li class="flex align-center g-2 c-p"><img class="invert" src="../Assets/search.svg" alt="search">Search</li>
+                </ul>
+
+            </div>
+
+            <div class="library bg-gray m-1 rounded flex column justify-space-between">
+
+                <div class="heading flex justify-space-between">
+
+                    <button class="flex align-center g-3 c-light-white f-3 f-w c-p">
+                        <img class="invert" src="../Assets/library.svg" alt="library">
+                        <span>Your Library</span>
+                    </button>
+
+                    <img class="invert c-p" src="../Assets/plus.svg" alt="plus">
+                    
+                </div>
+
+                <div class="song-list">
+                    <ul class="flex column g-4">
+                    </ul>
+                </div>
+
+                <div class="footer f-1">
+
+                    <div class="flex g-1 m-2">
+                        <a class="c-light-white t-decoration-non" href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+                        <a class="c-light-white t-decoration-non" href="https://www.spotify.com/jp/privacy/"><span>Safety & Privacy Center</span></a>
+                    </div>
+
+                    <div class="flex g-1 m-2">
+                        <a class="c-light-white t-decoration-non" href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                        <a class="c-light-white t-decoration-non" href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a>
+                        <a class="c-light-white t-decoration-non" href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+
+                    <div class="flex m-2">
+                        <a class="c-light-white t-decoration-non" href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a>
+                    </div>
+
+                    <a class="c-light-white t-decoration-non" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"><span>Cookies</span></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+        <div class="right-side rounded flex column align-center">
+
+            <div class="header flex justify-space-between bg-gray p-2">
+
+                <div class="nav flex align-center g-3">
+                    <img class="hamburger c-p" src="../Assets/interface.png" alt="interface">
+                    <img class="left-right rounded-1 p-5 c-p" src="../Assets/left-arrow.png" alt="left-arrow">
+                    <img class="left-right rounded-1 p-6 c-p" src="../Assets/right-arrow.png" alt="right-arrow">
+                </div>
+
+                <div class="buttons flex align-center g-4">
+                    <button class="btn rounded-1 c-light-white bg-trans f-3 f-w c-p">Sign up</button>
+                    <button class="btn rounded-1 f-3 f-w c-p">Log in</button>
+                </div>
+
+            </div>
+
+            <div class="playlists p-3 flex column">
+            </div>
+
+            <div class="playbar flex column justify-center align-center g-4 m-1">
+
+                <div class="song-info flex justify-space-between">
+
+                    <div class="song-name"></div>
+
+                    <div class="volume-time flex justify-center align-center">
+
+                        <div class="volume flex align-center g-5">
+                            <img class="c-p" src="../Assets/volume-up.png" alt="volume">
+                            <input class="range c-p" type="range" name="range" id="" value="100">
+                        </div>
+
+                        <div class="song-time"></div>
+                    </div>
+
+                </div>
+
+                <div class="song-btns flex justify-center align-center g-1">
+
+                    <img id="previous" class="c-p" src="../Assets/previous.png" alt="previous">
+                    <img id="play" class="c-p" src="../Assets/play.png" alt="play">
+                    <img id="next" class="c-p" src="../Assets/next.png" alt="next">
+
+                </div>
+
+                <div class="seek-bar c-p">
+                    <div class="circle rounded-1"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
