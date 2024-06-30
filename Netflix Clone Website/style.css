@@ -1,0 +1,723 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(220, 0, 0);
+    --hovered-color: rgb(190, 0, 0);
+    --activated-color: rgb(160, 0, 0);
+    --secondary-color: rgb(255, 255, 255);
+    --primary-font:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/*                                           Home                                           */
+
+#home{
+    background-image: url(assets/images/background-2.jpg);
+    background-size: max(1000px, 125%);
+    background-repeat: no-repeat;
+    background-position: 50% 63.8%;
+    height: 43.75em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 20.85vh;
+}
+
+#home .filter{
+    height: 43.75em;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6502976190476191) 25%, rgba(0,0,0,0.4962359943977591) 50%, rgba(0,0,0,0.6530987394957983) 75%, rgba(0,0,0,1) 100%);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+}
+
+#home nav{
+    height: 9.6vh;
+    width: 61.1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav img{
+    width: 148px;
+    filter: invert(14%) sepia(84%) saturate(5721%) hue-rotate(5deg) brightness(83%) contrast(120%);
+}
+
+nav button{
+    width: 77px;
+    height: 32.4px;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    border: none;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: var(--hovered-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:active{
+    background-color: var(--activated-color);
+}
+
+.home-container{
+    position: relative;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10.5px;
+}
+
+.home-container h1{
+    font-family: var(--primary-font);                      
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+
+.home-container p{
+    font-size: 1.55em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home-container h3{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 13.5px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.home-box{
+    display: flex;
+    gap: 3.5px;
+    position: relative;
+}
+
+.home-box label{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    bottom: 24px;
+    font-weight: 500;
+    left: 21px;
+    color: rgb(200, 200, 200);
+}
+
+.home-box label:hover{
+    cursor: text;
+}
+
+.mail-box{
+    border-radius: 8px;
+    padding: 4px;
+    margin-top: -14px;
+    border: 2px solid transparent;
+}
+
+.home-box > .mail-box > input[type="email"]{
+    height: 3.45em;
+    width: 23em;
+    border: 1px solid gray;
+    background-color: rgba(20, 20, 20, 0.7);
+    padding: 20px 15px 0px 15px;
+    color: var(--secondary-color);
+    border-radius: 3.5px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.home-box > .mail-box > input[type="email"]:focus{
+    color: var(--secondary-color);
+    padding: 20px 15px 0px 15px;
+}
+
+.home-box:focus-within > label{
+    font-size: 0.8em;
+    bottom: 36.5px;
+}
+
+.mail-box:focus-within{
+    border: 2px solid var(--secondary-color);
+}
+
+.home-box button{
+    height: 4.1em;
+    width: 15.8em;
+    margin-top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-box button p{
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.home-box button img{
+    width: 38px;
+}
+
+/*                                        Seperation                                        */
+
+#separation{
+    background-color: rgb(35, 35, 35);
+    height: 8px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/*                                     First Container                                      */
+
+.container{
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36em;
+}
+
+.container .text-half{
+    width: 31vw;
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    justify-content: center;
+    gap: 15px;
+}
+
+.container .text-half h2{
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.container .text-half p{
+    font-size: 1.55em;
+    line-height: 1.2em;
+}
+
+.container .img-half{
+    width: 31vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .img-half img{
+    position: absolute;
+    width: 30.5vw;
+    z-index: 1;
+}
+
+.container .img-half img{
+    position: absolute;
+    width: 30.5vw;
+    z-index: 1;
+}
+
+.container .img-half video{
+    width: 22.15vw;
+    position: sticky;
+    margin-right: 0.8%;
+    margin-bottom: 2.86%;
+}
+
+/*                                     Second Container                                     */
+
+#second-container .mobile-box{
+    height: 11.2vh;
+    width: 16.8vw;
+    z-index: 1;
+    position: sticky;
+    margin-top: 16.8em;
+    border: 2px solid rgb(100, 100, 100);
+    background-color: black;
+    border-radius: 12px;
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+}
+
+.mobile-box .movie-box{
+    display: flex;
+    align-items: center;
+    width: 62%;
+    gap: 10%;
+}
+
+.mobile-box .movie-box img{
+    position: relative;
+    width: 25%;
+}
+
+.mobile-box .movie-box div{
+    position: relative;
+    color: var(--secondary-color);
+    font-size: 0.85vw;
+}
+
+.mobile-box .movie-box div p{
+    font-weight: 400;
+    color: #0071eb;
+}
+
+.mobile-box img:last-child{
+    position: relative;
+    width: 16.5%;
+}
+
+/*                                     Third Container                                     */
+
+#third-container{
+    height: 42.5vh;
+    height: 24.34em;
+}
+
+#third-container section{
+    width: 22vw;
+}
+
+#third-container aside{
+    width: 22vw;
+}
+
+/*                                     Fourth Container                                     */
+
+
+/*                                           FAQ                                            */
+
+#FAQ{
+    background-color: rgb(5, 5, 5);
+    height: 57.5em;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#FAQ h2{
+    color: var(--secondary-color);
+    font-size: 3em;
+    margin-bottom: 0.4em;
+    font-weight: 800;
+    align-items: center;
+    text-align: center;
+}
+
+#FAQ .faq-box{
+    background-color: rgb(45, 45, 45);
+    min-width: 60.5em;
+    width: 61vw;
+    height: 5.2em;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+#FAQ .faq-box:hover{
+    transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: rgb(65, 65, 65);
+}
+
+#FAQ .faq-box h3{
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 400
+}
+
+#FAQ .faq-box img{
+    color: var(--secondary-color);
+    filter: invert(100%);
+    height: 36px;
+    width: 36px;
+}
+
+#FAQ > h3{
+    color: var(--secondary-color);
+    margin-top: 2.1em;
+    margin-bottom: 1.3em;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/*                                          FOOTER                                          */
+
+
+footer{
+    background-color: rgb(5, 5, 5);
+    height: 25em;
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 61vw;
+}
+
+.footer > a, .footer > span, .footer-list > a{
+    color: var(--secondary-color);
+    opacity: 0.7;
+}
+
+.footer-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 0px;
+    margin: 30px 0px;
+}
+
+.footer-list a{
+    font-size: 14px;
+}
+
+.footer-list a:active{
+    color: var(--primary-color);
+}
+
+/*                                      Responsiveness                                      */
+
+@media only screen and (max-width : 599px) {
+    #home{
+        background-size: 320%;
+        height: 35em;
+        gap: 5.85vh;
+    }
+    #home .filter{
+        height: 35em;
+    }
+    #home nav{
+        width: 90%;
+    }
+    nav img{
+        width: 90px;
+    }
+    .home-container{
+        padding: 0px 18px;
+    }
+    .home-container h1{
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .home-container p{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .home-container h3{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .home-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        gap: 1em;
+    }
+    .home-box > .mail-box > input[type="email"]{
+        height: 3.3em;
+        width: 85vw;
+    }
+    .home-box label{
+        bottom: 85px;
+        left: 20px;
+    }
+    .home-box > .mail-box > input[type="email"]:focus{
+        padding: 13px 15px 0px 15px;
+    }
+    .home-box:focus-within > label{
+        font-size: 0.75em;
+        bottom: 98px;
+        left: 21px;
+    }
+    .home-box button{
+        width: 12em;
+    }
+    .home-box button p{
+        font-size: 1.4em;
+    }
+    .home-box button img{
+        width: 32px;
+    }
+    .container{
+        height: 38em;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #third-container .text-half{
+        height: 20vh;
+        width: 100vw;
+    }
+    #third-container .img-half{
+        height: 10vh;
+        width: 100vw;
+    }
+    #second-container .mobile-box{
+        height: 10vh;
+        width: 50vw;
+    }
+    .mobile-box .movie-box div{
+        font-size: 2vw;
+    }
+    .container .text-half{
+        height: 25vh;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+    }
+    .container .text-half h2{
+        font-size: 2em;
+    }
+    .container .text-half p{
+        font-size: 1.2em;
+    }
+    .container .img-half{
+        height: 50vh;
+        width: 100vw;
+    }
+    .container .img-half > img{
+        width: 95.5vw;
+    }
+    .container .img-half > video{
+        width: 68.85vw;
+    }
+    #FAQ{
+        height: 55em;
+    }
+    #FAQ h2{
+        font-size: 2em;
+        font-weight: 700;
+    }
+    #FAQ .faq-box{
+        height: 4.5em;
+        min-width: 15em;
+        width: 92vw;
+    }
+    #FAQ .faq-box h3{
+        font-size: 18px;
+    }
+    #FAQ .faq-box img{
+        height: 24px;
+        width: 24px;
+    }
+    #FAQ > h3{
+        font-size: 1.2em;
+    }
+    footer{
+        height: 28.5em;
+    }
+    .footer{
+        width: 92vw;
+    }
+    .footer-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 959px) {
+    #home{
+        background-size: 200%;
+        height: 33em;
+        gap: 11.5vh;
+    }
+    #home .filter{
+        height: 33em;
+    }
+    #home nav{
+        width: 90%;
+    }
+    nav img{
+        width: 90px;
+    }
+    .home-container{
+        width: 85vw;
+    }
+    .home-container h1{
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .home-container p{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .home-container h3{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .home-box{
+        display: flex;
+        position: relative;
+    }
+    .home-box > .mail-box > input[type="email"]{
+        height: 3.3em;
+        width: 40vw;
+    }
+    .home-box label{
+        position: absolute;
+        bottom: 22px;
+        left: 1.7em;
+    }
+    .home-box button{
+        height: 4em;
+    }
+    .container{
+        height: 45em;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #third-container .text-half{
+        height: 10vh;
+        width: 100vw;
+    }
+    #third-container .img-half{
+        height: 10vh;
+        width: 100vw;
+    }
+    #second-container .mobile-box{
+        height: 15vh;
+        width: 50vw;
+    }
+    .mobile-box .movie-box div{
+        font-size: 1.8vw;
+    }
+    .container .text-half{
+        height: 10vh;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+    }
+    .container .text-half h2{
+        font-size: 2em;
+    }
+    .container .text-half p{
+        font-size: 1.2em;
+    }
+    .container .img-half{
+        height: 65vh;
+        width: 100vw;
+    }
+    .container .img-half > img{
+        width: 36.5em;
+    }
+    .container .img-half > video{
+        width: 26.3em;
+    }
+    #FAQ{
+        height: 52em;
+    }
+    #FAQ h2{
+        font-size: 2em;
+        font-weight: 700;
+    }
+    #FAQ .faq-box{
+        height: 4.5em;
+        min-width: 20em;
+        width: 93.3vw;
+    }
+    #FAQ .faq-box h3{
+        font-size: 18px;
+    }
+    #FAQ .faq-box img{
+        height: 24px;
+        width: 24px;
+    }
+    #FAQ > h3{
+        font-size: 1.2em;
+    }
+    footer{
+        height: 28.5em;
+    }
+    .footer{
+        width: 93vw;
+    }
+    .footer-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width : 960px) and (max-width : 1279px) {
+    #home{
+        background-size: 150%;
+        gap: 12.5em;
+    }
+    .home-box label{
+        bottom: 24px;
+    }
+    #home nav{
+        width: 90%;
+    }
+    .container{
+        height: 42.8em;
+        padding: 2em;
+        align-items: center;
+    }
+    #third-container{
+        height: 60vh;
+    }
+    #third-container .text-half{
+        width: 32vw;
+    }
+    #third-container .img-half{
+        width: 32vw;
+    }
+    #second-container .mobile-box{
+        height: 15vh;
+        width: 28vw;
+    }
+    .mobile-box .movie-box div{
+        font-size: 1.2vw;
+    }
+    .container .text-half{
+        width: 50vw;
+    }
+    .container .img-half{
+        width: 50vw;
+    }
+    .container .img-half > img{
+        width: 46vw;
+    }
+    .container .img-half > video{
+        width: 33.15vw;
+    }
+    #FAQ .faq-box{
+        min-width: 50em;
+        width: 94vw;
+    }
+    .footer{
+        width: 93vw;
+    }
+}
