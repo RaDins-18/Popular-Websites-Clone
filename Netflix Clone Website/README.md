@@ -1,4 +1,4 @@
-# Netflix Pakistan Clone Website
+# Netflix Clone Website
 
 ![Alt text](README-IMGS/OUTPUT.png)
 ![Alt text](README-IMGS/OUTPUT-1.png)
